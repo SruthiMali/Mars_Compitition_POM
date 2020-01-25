@@ -10,13 +10,8 @@ namespace MarsFramework
         [Category("Sprint1")]
         class User : Global.Base
         {
-            //  Page Object Model and Test driven Framework
-            [Test]
-            public void Test()
-            {
-                //
-
-            }
+            //  Page Object Model and Test driven Framework Saved in my F: Drive 
+            
             [Test]
             public void ShareSkill()
             {
@@ -43,7 +38,7 @@ namespace MarsFramework
                 SK.SelectSkillExchangeOption();
                 SK.SelectActiveOption();
                 SK.UploadWorkSamplesAutoIt();
-               // SK.ClickSave();
+                SK.ClickSave();
 
             }
 

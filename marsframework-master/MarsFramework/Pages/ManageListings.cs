@@ -1,6 +1,7 @@
 ﻿using MarsFramework.Global;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
+using RelevantCodes.ExtentReports;
 
 namespace MarsFramework.Pages
 {
@@ -64,6 +65,7 @@ namespace MarsFramework.Pages
             //Thread.Sleep(5000);
             GlobalDefinitions.wait(5000);
             ShareSkillButton.Click();
+            Base.test.Log(LogStatus.Info, "Clicked Shareskill Button");
 
         }
 
@@ -73,6 +75,7 @@ namespace MarsFramework.Pages
             //Thread.Sleep(5000);
             GlobalDefinitions.wait(5000);
             manageListingsLink.Click();
+            Base.test.Log(LogStatus.Info, "Clicked Manage Listings Link");
 
         }
 
@@ -80,6 +83,7 @@ namespace MarsFramework.Pages
         {
             ////View the listing
             view.Click();
+            Base.test.Log(LogStatus.Info, "Clicked Save Button");
         }
 
         internal void Clickedit()
@@ -90,6 +94,7 @@ namespace MarsFramework.Pages
             //Title.SendKeys(GlobalDefinitions.ExcelLib.ReadData(2,"Title"));
             Title.SendKeys("Selenium");
             Save.Click();
+            Base.test.Log(LogStatus.Info, "Clicked Edit Button");
 
         }
 
@@ -100,11 +105,13 @@ namespace MarsFramework.Pages
             {
                 // perform action i.e Click on Yes 
                 clickYesButton.Click();
+                Base.test.Log(LogStatus.Info, "Clicked on YES button for delete");
             }
             else
             {
                 // perform action i.e Click on No
                 clickNoButton.Click();
+                Base.test.Log(LogStatus.Info, "Clicked on NO  button for delete");
             }
 
         }

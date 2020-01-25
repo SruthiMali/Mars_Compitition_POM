@@ -21,7 +21,6 @@ namespace Marsframework.Pages
         }
 
 
-
         //Click on ShareSkill Button
         [FindsBy(How = How.XPath, Using = "//a[@class='ui basic green button']")]
         private IWebElement ShareSkillButton { get; set; }
@@ -114,10 +113,10 @@ namespace Marsframework.Pages
         [FindsBy(How = How.XPath, Using = "//i[@class='huge plus circle icon padding-25']")]
         private IWebElement WorkSampleUploadButton { get; set; }
 
-        internal void EnterShareSkill()
+        /*internal void EnterShareSkill()
         {
 
-        }
+        }*/
 
         internal void ClickOnShareSkillButton()
         {
@@ -125,7 +124,7 @@ namespace Marsframework.Pages
             //Thread.Sleep(5000);
             GlobalDefinitions.wait(5000);
             ShareSkillButton.Click();
-
+            Base.test.Log(LogStatus.Info, "Clicked ShareSkill Button");
         }
 
         internal void EnterTitle()
